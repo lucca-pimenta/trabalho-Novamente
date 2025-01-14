@@ -1,0 +1,93 @@
+/* Estilos do Body */
+body {
+    background-image: url(https://img.freepik.com/fotos-gratis/cena-de-horror-com-um-salao-assustador_23-2150975360.jpg?t=st=1736809236~exp=1736812836~hmac=17ef6c6cacb8aae87f08c9d27dd775a95d4fb64a79ccf640cf32535ae233965d&w=1060);
+    background-repeat: no-repeat;
+    background-size: cover; /* Alterado para 'cover' para garantir que o fundo ocupe toda a tela */
+    font-family: 'Arial', sans-serif; /* Adicionado para garantir uma fonte mais legível */
+}
+
+/* Estilos para o formulário (usando classes do Bootstrap) */
+#formlog,
+#life {
+    background-color: rgb(153, 255, 150);
+    border: 2px solid rgb(0, 0, 0); /* Bordas ajustadas para ficarem mais sutis */
+    padding: 20px; /* Padding aumentado para maior espaçamento interno */
+    width: 100%; /* Deixamos o width em 100% para aproveitar as colunas do Bootstrap */
+    margin: 20px auto; /* Centralizado usando auto */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar profundidade */
+    transition: all 0.3s ease-in-out; /* Transição suave para efeitos */
+}
+
+/* Responsividade utilizando Bootstrap: */
+@media (min-width: 576px) {
+    #formlog, #life {
+        width: 50%; /* Para telas pequenas, 50% de largura */
+    }
+}
+
+@media (min-width: 768px) {
+    #formlog, #life {
+        width: 40%; /* Para telas médias, 40% de largura */
+    }
+}
+
+@media (min-width: 992px) {
+    #formlog, #life {
+        width: 30%; /* Para telas grandes, 30% de largura */
+    }
+}
+
+/* Efeito ao passar o mouse sobre os formulários (hover) */
+#formlog:hover, #life:hover {
+    transform: translateY(-5px); /* Pequeno movimento para cima ao passar o mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Efeito de sombra mais forte */
+}
+
+/* Adicionando estilos de botões com Materialize */
+button {
+    background-color: #007bff; /* Cor azul do Materialize */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #0056b3; /* Cor de hover mais escura */
+}
+
+/* Efeito ripple para botões usando Materialize */
+button:focus {
+    outline: none; /* Remove o contorno padrão do navegador */
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5); /* Adiciona sombra ao focar */
+}
+
+/* Animações de Materialize */
+.waves-effect {
+    position: relative;
+    overflow: hidden;
+}
+
+.waves-effect:active::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.2);
+    transform: scale(0);
+    animation: ripple 0.6s linear;
+}
+
+@keyframes ripple {
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+

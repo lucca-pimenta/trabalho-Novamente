@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<convenio>
+    <dados_convenio>
+        <loja>Loja A</loja>
+        <desconto1>5</desconto1>
+    </dados_convenio>
+
+    <dados_convenio>
+        <loja>Loja B</loja>
+        <desconto2>10</desconto2>
+    </dados_convenio>
+
+    <dados_convenio>
+        <loja>Loja C</loja>
+        <desconto3>20</desconto3>
+    </dados_convenio>
+
+    <dados_convenio>
+        <loja>Loja D</loja>
+        <desconto4>30</desconto4>
+    </dados_convenio>
+</convenio>

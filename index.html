@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="estacional.js"></script>
+    <link rel="stylesheet" type="text/css" href="estacio.css">
+    <title>Estacionamento</title>
+</head>
+<body>
+
+    <form name="formlog" id="formlog">
+        <p>Login:<input type="text" name="User" required/></p>
+        <p>Senha:<input type="Password" name="Senha" required/></p>
+        <button type="button" name="btLogin" onclick="Logar()">Logar</button>
+    </form>
+    <div id="life">
+    <form id="Info" name="Info">
+        <p>Placa do carro:<input type="text" name="PlacaCarro" required/></p>
+        <p>Data de entrada:<input type="date" name="Data" required/></p>
+        <p>Hora de entrada:<input type="number" name="Hora" required/></p>
+        <p>Data de Saida:<input type="date" name="DataS" required/></p>
+        <p>Hora de Saida:<input type="number" name="HoraS" required/></p>
+        <p>Tarifa:<input type="number"  id="Tarifa" name="Tarifa" disabled/></p>
+        <p>Digite seu convenio(A,B,C ou D, qualquer outra letra será considerado que voce não possui convenio):<input type="text" name="Lojas" required/></p>
+        <p><button type="button" name="btenviar" onclick = "enviar()">Enviar</button></p>
+    </form>
+    <table id="Tabelinha" border="1">
+    <tr>
+        <th>Placa do carro:</th>
+        <th>Data de entrada:</th>
+        <th>Hora de entrada:</th>
+        <th>Data de Saida:</th>
+        <th>Hora de Saida:</th>
+        <th>Valor pago:</th>
+    </tr>
+    </table>
+    </div>
+</body>
+</html>
